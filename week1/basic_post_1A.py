@@ -1,3 +1,9 @@
+# Autor uczący się: Jarosław Krefft
+# Data utworzenia: 30.04.2026
+# Nazwa i wersja programu: basic_post_1A.py
+# Adres : https://jsonplaceholder.typicode.com/
+# Kod wysyła żądanie HTTP POST do API JSONPlaceholder, tworząc nowy „post” z podanymi danymi i wyświetlając odpowiedź zwróconą przez serwer.
+
 import requests
 
 url = "https://jsonplaceholder.typicode.com/posts"
