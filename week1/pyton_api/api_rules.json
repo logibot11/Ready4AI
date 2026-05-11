@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "rule": "rzeczowniki w liczbie mnogiej .. /users, /stories"       
+    },
+    {
+        "id": 2,
+        "rule": "powinniśmy używać rzeczowników, nie czasowników"        
+    },
+    {
+        "id":3,
+        "rule":"metoda GET nie powinna zmieniać stanu kiedy wywołujemy metody GET"
+    },
+    {
+        "id":4,
+        "rule":"przy odpowiedzi w API dane zwracaj zwracaj w postaci JSONA"
+    },
+    {
+        "id":5,
+        "rule":"nie zagnieżdżaj zwracanych danych np: /users/7/posts   ... trzeba użyć query stringa   /posts?user_id=7"
+    },
+    {
+        "id":6,
+        "rule":"querystring używajmy do filtrowania i paginacji ... /users?page=1&page_size=30"
+    },
+    {
+        "id":7,
+        "rule":"zadbaj o spójność slashy"
+    },
+    {
+        "id":8,
+        "rule":"HTTP status codes przy błędach - zadbać okody błedów - konieczne przy zwracaniu informacji o błędach"
+    },
+    {
+        "id":9,
+        "rule":"konieczne aby w Response Body umieszczać szczegóły błędów"
+    },
+    {
+        "id":10,
+        "rule":"autentykacja - powinna mieć błąd 401... autoryzacja powinna mieć błąd 403"
+    }
+
+]
