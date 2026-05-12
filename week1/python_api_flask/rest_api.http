@@ -1,0 +1,11 @@
+### GET ALL USERS 
+GET http://localhost:3000/users
+
+
+### GET USERS ARG - BY AGE
+GET http://localhost:3000/users?age=30
+
+
+### GET USERS ARG - BY AGE AND CITY
+GET http://localhost:3000/users?city=Lodz&age=30
+
