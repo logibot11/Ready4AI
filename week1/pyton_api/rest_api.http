@@ -1,7 +1,9 @@
+### GET USERS 
 GET http://localhost:3000/test 
 
-###
 
+
+### CREATE USERS
 POST http://localhost:3000/test
 Content-Type: application/json
 
