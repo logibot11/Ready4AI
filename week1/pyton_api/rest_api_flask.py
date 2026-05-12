@@ -5,24 +5,26 @@
 # Użycie metod GET i POST
 # Zatrzymanie, wyjście z serwera CTRL+C
 
+# dodanie opcji Debug włącza: debugger,
+# automatyczny restart, szczegółowe błędy.
 
-from flask import Flask
-from flask import jsonify
-from flask import request
+from flask import Flask, jsonify, request
+
 
 app = Flask(__name__)
 
 
 @app.route('/test', methods=['GET']) #endpoint GET
-
 def test():
     return jsonify(result='to jest test')
 
+
 @app.route('/test' , methods=['POST']) #endpoin 2
 def test_post():
-    request_data = request.get_json()
+    data = request.get_json()
 
-    return request_data, 201
+    if not data:
+        return jsonify(error="Brak JSON"), 400
+    return jsonify(data), 201
 
-
-app.run(port=3000)
+app.run(port=3000, debug = True)
